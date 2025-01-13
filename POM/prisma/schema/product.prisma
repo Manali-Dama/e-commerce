@@ -1,0 +1,10 @@
+model products {
+  ws_Id       Int         @id @default(autoincrement())
+  name        String
+  price       Float
+  package_size Int
+  tags        String[]
+  images      String[]
+  description String
+  cartItems   cartItems[] // One-to-Many relationship with cartItems
+}

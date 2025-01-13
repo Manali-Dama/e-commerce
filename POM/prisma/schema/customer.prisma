@@ -1,0 +1,10 @@
+model customer{
+    customer_id Int @id @default(autoincrement())
+    name String
+    contact Int
+    mail String
+    password String
+    address String
+    pincode Int
+
+}

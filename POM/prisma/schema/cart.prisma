@@ -1,8 +1,0 @@
-model cart {
-  cart_id     Int         @id @default(autoincrement())
-  user_id     Int
-  items       cartItems[] // One-to-Many relationship with cartItems
-  total       Float
-  created_at  DateTime    @default(now())
-  updated_at  DateTime    @updatedAt
-}

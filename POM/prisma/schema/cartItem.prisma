@@ -1,8 +1,0 @@
-model cartItems {
-  id          Int         @id @default(autoincrement())
-  cart_id     Int
-  product_id  Int         // Foreign key referencing products.ws_Id
-  quantity    Int
-  cart        cart        @relation(fields: [cart_id], references: [cart_id])
-  product     products    @relation(fields: [product_id], references: [ws_Id])
-}

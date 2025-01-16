@@ -1,5 +1,0 @@
-model admin{
-    admin_id Int @id @default(autoincrement())
-    mail String
-    Password String
-}
